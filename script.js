@@ -36,19 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    class Fleet {
-        constructor() {
-            this.ships = [];
-        }
-    }
-
     const frigate = new Ships("Frigate", "lightgray", [0, 1, 2, 3]);
     const destroyer = new Ships("Destroyer", "lightgray", [0, 1, 2]);
     const cruiser = new Ships("Cruiser", "lightgray", [0, 1]);
     const submarine = new Ships("Submarine", "lightgray", [0]);
-
-    const playerFleet = new Fleet();
-    const computerFleet = new Fleet();
 
     function showGameBoards() {
         gameView.style.display = 'none';
