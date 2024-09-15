@@ -1,0 +1,90 @@
+body {
+    font-size: 2vw;
+    padding: 5%;
+    background-color: lightblue;
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    background-color: lightgrey;
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#menu-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board-container {
+    display: flex;
+    justify-content: center;
+    gap: 75px; /* Reduce gap between boards or elements */
+    margin: 0;
+    padding: 0;
+}
+#game-boards-view {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.game-board {
+    width: 500px; /* Adjust according to your grid size */
+    height: 500px; /* Adjust according to your grid size */
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 1px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#game-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cell {
+    background-color: lightgray;
+    width: 50px;
+    height: 50px;
+}
+
+.dragging-ship {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+button:active {
+    background-color: darkgrey;
+    transform: scale(0.95);
+}
+
+#menu-view p1, #game-view h2 {
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header {
+    text-shadow: 1px 1px 2px black;
+}
